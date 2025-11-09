@@ -3,3 +3,34 @@ __pycache__/
 .venv/
 .env
 .env.*
+
+# Packaging / build artifacts
+build/
+dist/
+downloads/
+*.egg-info/
+*.egg
+.eggs/
+
+# Test / coverage
+.coverage*
+htmlcov/
+.pytest_cache/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# SQLite databases
+*.sqlite3
+
