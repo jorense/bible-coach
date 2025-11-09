@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible Coach</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>📖 Bible Coach</h1>
+        <p>
+          Walk through Observation, Interpretation, and Application with an AI
+          companion.
+        </p>
+      </header>
+      <section id="chat" class="chat" aria-live="polite"></section>
+      <form id="chat-form" class="chat__form" autocomplete="off">
+        <label class="visually-hidden" for="message">Share your thoughts</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type your passage or response here..."
+          required
+          rows="3"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <script type="module" src="/static/app.js"></script>
+  </body>
+</html>
